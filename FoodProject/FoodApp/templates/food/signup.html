@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - FoodWeb</title>
+    <link rel="stylesheet" href="{% static 'FoodRecipe.css'%}">
+</head>
+<body class="signup-body">
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <div class="signup-input">
+            <input id="First" type="text" placeholder="First Name"><br>
+            <input id="Last" type="text" placeholder="Last Name"><br>
+            <input id="email" type="email" placeholder="Email/Username"><br>
+            <input id="password" type="password" placeholder="Password"><br>
+            <input id="confirm-pass"  type="password" placeholder="Confirm Password"><br>
+            <button>Sign up</button>
+        </div>
+
+        <p>Already have an account?
+            <a href="./login.html">Login</a>
+        </p>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe - Fijacksprop</title>
+    <link rel="stylesheet" href="{% static 'FoodRecipe.css'%}">
+</head>
+
+<body>
+    <header>a
+        <div class="header-top">
+            <p>Our recipe is <em>your design...</em><a href="www.signup.com">Sign Up</a></p>
+        </div> <br>
+        <div class="header-main">
+            <div class="header-topic">
+                <p>Fijacks Recipe</p>
+            </div>
+            <div>
+                <nav>
+                    <ul class="link-list">
+                        <li><a href="home.com">HOME</a></li>
+                        <li><a href="about.com">ABOUT</a></li>
+                        <li><a href="{% url "menu" %}">PRODUCTS</a></li>
+                        <li><a href="{% url "signup" %}">SIGN UP</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <h3 id="body-head">SIMPLE RECIPES MADE FOR <em>real. actual. everyday life</em></h3>
+
+    <div class="head-images">
+        <img id="img1" src="{% static "foodimages/1727188260777.jpeg" %}" alt="Dinner">
+        <p id="text1">Deluxe Product</p>
+
+        <img id="img2" src="{% static "foodimages/1727188260794.jpeg"%}" alt="Bowler">
+        <p id="text2">Under Mined</p>
+
+        <img id="img3" src="{% static "foodimages/1727188260807.jpeg"%}" alt="Deep Series">
+        <p id="text3">Proplexed Vent</p>
+        
+        <img id="img4" src="{% static "foodimages/1727188260822.jpeg"%}" alt="Raiser">
+        <p id="text4">Revolutional Meal</p>
+        
+        <img id="img5" src="{% static "foodimages/1727188260837.jpeg"%}" alt="Walker">
+        <p id="text5">Luminos Amigo</p>
+    </div>
+
+    <div class="bottom-head">
+        <p>FOODS AND RECIPE WE OFFER YOU!</p>
+    </div>
+
+<div class="contain1">
+    <div class="body-cont">
+        <img src="{% static "foodimages/1727200637425.jpeg"%}" alt="maltavert">
+        <h3 id="reed">Indian Thali</h3>
+        <p id="deer">Featuring various curries, spiced rice, naan, papadum,
+             and vegetable dishes, served with condiments and chutneys. 
+             Hearty, traditional meal. Rich flavours from fresh, spiced sides.
+        </p>
+        <button id="b1">Add to Wishlist</button> <button id="b2">Add to Cart</button>
+    </div>
+
+    <div class="body-cont">
+        <img src="{% static "foodimages/1727200637439.jpeg"%}" alt="Curry Platter">
+        <h3 id="reed">Curry Platter</h3>
+        <p id="deer">
+            Chicken curry, vegetable-based, garnished with herbs like coriander. 
+            Flatbreads (naan or roti), red sauce and rice. Balance of spicy, 
+            savory and starchy elements. Served with milk dish.
+        </p>
+        <button id="b1">Add to Wishlist</button> <button id="b2">Add to Cart</button>
+    </div>
+
+    <div class="body-cont">
+        <img src="{% static "foodimages/1727200637453.jpeg"%}" alt="Butter Chicken">
+        <h3 id="reed">Butter Chicken Combo</h3>
+        <p id="deer">
+            Curry meal with naan bread served alongside a rich butter chicken curry. 
+            Basmati rice and pakoras/fried appetizers. Hearty meal. Soft, leavened flatbread 
+            fragment long-grain rice.
+        </p>
+        <button id="b1">Add to Wishlist</button> <button id="b2">Add to Cart</button>
+    </div>
+
+    <div class="body-cont">
+        <img src="{% static "foodimages/1727200637468.jpeg"%}" alt="Biryani Chicken">
+        <h3 id="reed">Biryani Chicken Dish</h3>
+        <p id="deer">
+            Spiced basmati rice, marinated meat (chicken, mutton or beef), and a variety 
+            of fragrant spices. Chicken biryani with saffron or tumeric for flavour and aroma. 
+            Yoghurt-based dish.
+        </p>
+        <button id="b1">Add to Wishlist</button> <button id="b2">Add to Cart</button>
+    </div>
+
+    <div class="body-cont">
+        <img src="{% static "foodimages/1727200637483.jpeg"%}" alt="Biryani Rice">
+        <h3 id="reed">Biryani  Rice Dish</h3>
+        <p id="deer">
+            Rice mixed with meat and vegetables, creating a colourful appetizing dish. 
+            Biryani rice dish, blend of spices and flavours. Soup (Clear vegetable or lentil) to
+            complement the flavour. 
+        </p>
+        <button id="b1">Add to Wishlist</button> <button id="b2">Add to Cart</button>
+    </div>
+    
+    <div class="body-cont">
+        <img src="{% static "foodimages/1727200637494.jpeg"%}" alt="Soup with fresh">
+        <h3 id="reed">Soup with fresh herbs</h3>
+        <p id="deer">
+           Rice accompanied with slices of bread and sauce. Soup is garnished with lime for added 
+           flavour. Overall composition exudes warmth and homeliness. Fresh herbs like parsley or cilantro 
+           to enhanc the soup added flavour.
+        </p>
+        <button id="b1">Add to Wishlist</button> <button id="b2">Add to Cart</button>
+    </div>
+
+    <div class="body-cont">
+        <img src="{% static "foodimages/1727200637511.jpeg"%}" alt="Green Medley">
+        <h3 id="reed">Green Medley Delight</h3>
+        <p id="deer">
+            Roasted brussels sprouts and broccoli. Tender on the inside with crispy outer layer from roasting. 
+            Enhance it with creamy garlic Parmesan sauce drizzled over the veggies for extra flavour. 
+        </p>
+        <button id="b1">Add to Wishlist</button> <button id="b2">Add to Cart</button>
+    </div>
+
+    <div class="body-cont">
+        <img src="{% static "foodimages/1727200637525.jpeg"%}" alt="Garden Harvest">
+        <h3 id="reed">Garden Harvest</h3>
+        <p id="deer">
+            colourful mix of fresh veggies like lettuce, tomatoes, cucumbers, carrots and crunchy croutons. 
+            Add zesty balsamic vinaigrette or a creamy ranch dressing for some extra flavour.
+            Pair with light refreshing gazpacho soup.
+        </p>
+        <button id="b1">Add to Wishlist</button> <button id="b2">Add to Cart</button>
+    </div>
+     
+</div>
+    <footer>
+        <div class="footer-topic">
+            <p>Fijacks Recipe</p>
+        </div>
+        <div class="footer-list">
+            <ul>
+                <li>&copy; 2024 Fijacksprop All rights</li>
+                <li>A Raptive Partnership</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

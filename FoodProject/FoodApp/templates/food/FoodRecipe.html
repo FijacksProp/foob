@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe - Fijacksprop</title>
+    <link rel="stylesheet" href="{% static 'FoodRecipe.css'%}">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <p>Our recipe is <em>your design...</em><a href="www.signup.com">Sign Up</a></p>
+        </div> <br>
+        <div class="header-main">
+            <div class="header-topic">
+                <p>Fijacks Recipe</p>
+            </div>
+            <div>
+                <nav>
+                    <ul class="link-list">
+                        <li><a href="{% url "home" %}">HOME</a></li>
+                        <li><a href="about.com">ABOUT</a></li>
+                        <li><a href="recipe.com">PRODUCTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="bottom-head">
+        <p>FIND YOUR COMBO HERE!</p>
+    </div>
+
+<div class="contain1">
+    {% for stuff in menu %}
+    <div class="body-cont">
+        <img src={{ stuff.img.url }} alt="saladine">
+        <h3>{{ stuff.name }}</h3>
+        <p>{{ stuff.description }}</p>
+        <p><b>CATEGORY:</b> {{ stuff.category.name }}</p>
+        <p><b>STOCK:</b> {{ stuff.stock }}</p>
+        <p><b>PRICE:</b> ${{ stuff.price }}</p>
+        <button id="b1">Add to Wishlist</button> <button id="b2">Add to Cart</button>
+    </div>
+    {% endfor %}
+</div>
+    <footer>
+        <div class="footer-topic">
+            <p>Fijacks Recipe</p>
+        </div>
+        <div class="footer-list">
+            <ul>
+                <li>&copy; 2024 Fijacksprop All rights</li>
+                <li>A Raptive Partnership</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

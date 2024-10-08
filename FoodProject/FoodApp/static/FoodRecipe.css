@@ -1,0 +1,237 @@
+/*Basic Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header Styling*/
+.header-top {
+    background-color: #5f3301;
+    padding: 15px;
+}
+.header-top p {
+    color: azure;
+}
+.header-top em {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header-top a {
+    font-weight: bolder;
+}
+.header-main {
+    font-weight: bolder;
+    padding: 24px;
+    padding-top: 10px;
+    border-bottom: #5f3301 solid 1px;
+}
+.header-topic {
+    color:#5f3301;
+    float: left;
+}
+nav {
+    display: flex;
+    margin-left: 800px;
+}
+.link-list {
+    list-style: none;
+    display: flex;
+    gap: 17px;
+}
+.link-list a {
+    color: #5f3301;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: right;
+    padding: 12px;
+}
+.link-list a:hover {
+    background-color:#683b07;
+    color: azure;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+
+/*body design*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+#body-head {
+    text-align: center;
+    padding: 22px;
+}
+.head-images {
+    text-align: center;
+}
+.head-images img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.head-images img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+#text1, #text2, #text3, #text4, #text5 {
+    display: none;
+}
+
+.bottom-head p {
+    text-align: center;
+    margin: solid 2px;
+    padding: 20px;
+    font-weight: bolder;
+}
+.contain1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 15px;
+}
+.body-cont {
+    border-radius: 12px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 5px;
+    text-align: center;
+    
+}
+.body-cont img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.body-cont:hover {
+    transition: 0.2s;
+}
+
+#reed {
+    color:black;
+    padding: 12px;
+}
+#deer {
+    color:black;
+    display: block;
+}
+
+#b1{
+    color: #5f3301;
+    background-color: white;
+    padding: 10px;
+    margin: 8px;
+    border: solid 1px rgb(49, 28, 1);
+    font-weight: bolder;
+}
+#b2 {
+    color: azure;
+    background-color: #5f3301;
+    padding: 10px;
+    margin: 8px;
+    border: solid 1px rgb(49, 28, 1);
+    font-weight: bolder;
+}
+#b1:hover {
+    border-radius: 12px;
+    transition: 0.4s;
+}
+#b2:hover {
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+/*footer design*/
+footer {
+    background-color: #5f3301;
+    padding: 20px;
+}
+.footer-topic {
+    color:azure;
+    font-weight: bolder;
+}
+.footer-list ul li {
+    list-style: none;
+    text-decoration: none;
+    color: azure;
+    text-align: center;
+}
+
+/*Login Design*/
+.login-body, .signup-body {
+    background-image: url("./forwall.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.login-container, .signup-container {
+    background-color: rgba(219, 218, 218, 0.9);
+    opacity: inherit;
+    border: solid 1.2px;
+    width: 400px;
+    height: 400px;
+    padding: 24px;
+    margin: 160px;
+    margin-inline: 450px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+.login-container h2, .signup-body h2 {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+.login-input, .signup-input {
+    display: block;
+    margin: 5px;
+    margin-top: 10px;
+}
+.login-input #password, button, .signup-input #email, #confirm-pass, #Last, #password {
+    margin-top: 10px;
+}
+.login-input #email, #password, .signup-input #First, #Last, #confirm-pass, #email {
+    border: solid 2px;
+    border-top: none;
+    border-inline: none;
+    padding: 10px;
+    padding-right: 150px;
+}
+.login-input button, .signup-input button{
+    text-align: center;
+    margin-top: 18px;
+    margin-right: 20px;
+    border: solid black 1.2px;
+    padding: 10px;
+    padding-inline: 35px;
+}
+.login-input button:hover, .signup-input button:hover {
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.login-input button:active, .signup-input button:active {
+    background-color: rgb(104, 102, 102);
+    transition: 0s;
+}
+
+.login-input a {
+    color: rgb(0, 38, 255);
+    text-decoration: none;
+    margin-left: 70px;
+}
+.login-container p, .signup-container p { 
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+.login-container a:hover {
+    text-decoration: underline;
+}
+.login-container p a, .signup-container p a {
+    color:rgb(0, 38, 255);
+    margin-left: 5px;
+    text-decoration: none;
+}
+.login-container p a:hover, .signup-container p a:hover{
+    text-decoration: underline;
+}
